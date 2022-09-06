@@ -1,0 +1,643 @@
+@font-face {
+    font-family: 'Red Hat Text';
+    src: url("./assets/fonts/RedHatText-Regular.woff2"),
+    url("./assets/fonts/RedHatText-Regular.woff");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Red Hat Text';
+    src: url("./assets/RedHatText-Medium.woff2"),
+    url("./assets/fonts/RedHatText-Medium.woff");
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Red Hat Text';
+    src: url("./assets/fonts/RedHatText-Bold.woff2"),
+    url("./assets/fonts/RedHatText-Bold.woff");
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: Aleo;
+    src: url("./assets/fonts/Aleo-Regular.woff2"),
+    url("./assets/fonts/Aleo-Regular.woff");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Aleo;
+    src: url("./assets/fonts/Aleo-Light.woff2"),
+    url("./assets/fonts/Aleo-Light.woff");
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: Aleo;
+    src: url("./assets/fonts/Aleo-Bold.woff2"),
+    url("./assets/fonts/Aleo-Bold.woff");
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Red Hat Text', sans-serif;
+}
+body._lock {
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+p {
+    font-size: 20px;
+}
+/* ============ HEADER ============= */
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+header {
+    background-image: url('./assets/image/garrett-parker1.png');
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    color: #fff;
+}
+.header-wrapper {
+    background: rgba(242, 120, 92, 0.7);
+    padding: 0 120px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* box-shadow: 0px 5px 6px -2px rgba(37, 46, 52, 0.37); */
+}
+.head-logo {
+    margin-bottom: 5px;
+}
+.mobile-logo {
+    display: none;
+}
+.nav-link {
+    margin-right: 38px;
+    display: flex;
+    justify-content: space-between;
+    width: 527px;
+}
+.link {
+    letter-spacing: 0.4px;
+}
+.header-links {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.btn-green{
+    min-height: 41px;
+    min-width: 103px;
+    background-color: #0D606F;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font: inherit;
+    cursor: pointer;
+    box-shadow: 1px 4px 8px 0px rgba(34, 60, 80, 0.5);
+}
+.btn-green:hover {
+    background-color: rgb(41, 129, 129);
+    transition: .2s;
+}
+.btn-green:active {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .5);
+   }
+/*=============== MAIN ================ */
+
+main {
+    
+}
+.content-part{
+    padding: 32px 428px 0 120px;
+    font-family: Aleo, sans-serif;
+    color: #fff;
+}
+.main-heading{
+    line-height: 96px;
+    font-size: 80px;
+    font-weight: bold;
+}
+.search-block{
+    height: 95px;
+    max-width: 892px;
+    margin: 0 40px 0 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 18px 0 35px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    margin-top: 48px;
+}
+.first-paragraph{
+    margin-top: 35px;
+    font-weight: 500;
+    font-style: italic;
+}
+.content-part-block .btn-green{
+    width: 228px;  
+    height: 60px;
+    font-family: 'Red Hat Text', serif; 
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.block-paragraph{
+    color: #F2785C;
+    font-family: Aleo;
+    font-style: italic;
+}
+.head-textarea{
+    background: none;
+    border: none;
+    resize: none;
+    font-size: 23px;
+}
+.head-textarea::-webkit-scrollbar{
+    width: 0;
+}
+.head-textarea::placeholder{
+    color: #F2785C;
+    font-family: Aleo;
+    font-style: italic;
+}
+.head-textarea:focus-visible{
+    outline: none;
+    
+}
+.preview-section{
+    background-image: url('./assets/image/garrett-parker1.png');
+    background-repeat: no-repeat;
+    background-position: center -90px;
+    box-shadow: 0px 12px 6px -9px rgba(13, 96, 111, 0.7) inset;
+    height: 675px;
+}
+/*========== STEPS BLOCK =============*/
+.steps-block{
+    padding-top: 87px;
+}
+.second-heading{
+    color: #F2785C;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+}
+.icons-block {
+    display: flex;
+    margin-top: 46px;
+    justify-content: space-around;
+    padding: 0 50px;
+}
+.icon-block {
+    text-align: center;
+}
+.second-element {
+    margin-left: 71px;
+}
+.icon {
+    max-height: 100px;
+    max-width: 100px;
+}
+.icons-pharagraf {
+    margin-top: 30px;
+    font-family: Aleo, sans-serif;
+    color: #0D606F;
+}
+/* ============ DESTINATION ============== */
+.destination{
+    padding-top: 105px;
+}
+.pictures-block {
+    display: flex;
+    margin-top: 52px;
+    column-gap: 60px;
+    justify-content: center;
+    overflow: hidden;
+}
+.destin-foto {
+    border-radius: 16px;
+}
+.picture-block {
+    position: relative;
+}
+.picture-text {
+    position: absolute;
+    bottom: 47px;
+    left: 15px;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 500;
+}
+.circle-block{
+    display: flex;
+    justify-content: space-between;
+    margin: 22px auto 0;
+    max-height: 20px;
+    width: 80px;
+    
+}
+.circle{
+    max-height: 20px;
+    max-width: 20px;
+}
+.destination .btn-green{
+    display: block;
+    margin: 40px auto 0;
+    padding-right: 10px;
+    width: 228px;
+    height: 59px;
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: 500;
+    /* box-shadow: 1px 1px 2px 0px rgba(34, 60, 80, 0.5); */
+}
+
+.btn-span{
+    background: url('./assets/icons/arrow.svg') 0px -5px no-repeat;
+    padding-right: 50px;
+}
+/* ============= TRAVEL ============== */
+
+.travel{
+    padding-top: 85px;
+}
+.stories {
+    background: url('./assets/image/stories.jpg') 0 0 repeat;
+    margin-top: 48px;
+    font-family: Aleo, sans-serif;
+    color: #0D606F;
+}
+.stories-wrap {
+    padding: 40px 125px 40px 120px;
+    background-color: rgba(255, 255 ,255, 0.7 );
+    height: 100%;
+}
+.stories-block {
+    display: flex;
+    padding-bottom: 30px;
+    align-items: center; 
+}
+.stories-img {
+    border-radius: 16px;
+    box-shadow: 0px 4px 4px 0px rgba(13, 96, 111, 1);
+    
+}
+.stories-text-block {
+    padding-left: 40px;
+    margin: 6px 0 0 0;
+
+}
+.stories-heading {
+    font-size: 35px;
+}
+.stories-pharagraf {
+    font-size: 20px;
+    padding-top: 24px;
+    line-height: 24px;
+}
+.read {
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.stories-wrap .btn-green {
+    display: block;
+    margin: 10px auto 0;
+    min-width: 228px;
+    min-height: 59px;
+    font-size: 24px;
+    font-family: "Red Hat Text";
+    cursor: pointer;
+}
+/* =============== FOOTER ===============  */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: #fff;
+    height: 61px;
+    background: url('./assets/image/stories.jpg') 0 -1270px no-repeat
+}
+.footer-icon {
+    fill:#fff;
+    stroke: #fff;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+.footer-icon:hover {
+    transition: 0.3s;
+    stroke: rgb(224, 202, 171);
+    fill: rgb(224, 202, 171);
+}
+.footer-pharagraf {
+    margin-right: 330px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.footer-icons-block {
+    display: flex;
+    column-gap: 20px;
+    margin-right: 117px;
+}
+
+/* ================ МЕДИА ЗАПРОСЫ ================= */
+@media (max-width: 1140px) {
+    .header-wrapper {
+        padding: 0 70px;
+    }
+    .content-part {
+        padding: 32px 428px 0 70px;
+    }
+    .search-block {
+        margin: 48px 40px 0 70px;
+    }
+    .stories-wrap {
+        padding: 40px 20px 40px 20px;
+    }
+    .footer-pharagraf {
+        margin-right: 175px;
+    }
+    
+}
+@media (max-width: 1024px) {
+    .stories{
+        height: 100%;
+        background: url(./assets/image/stories.jpg) 0 0 repeat;
+    }
+    .stories-pharagraf {
+        padding-top: 7px;
+    }    
+    .stories-block {
+        padding-bottom: 50px;
+    }
+    .stories-text-block {
+        padding-left: 19px;
+        margin: 6px 0 0 0;
+    }
+    .destin-foto{
+        max-width: 500px;
+        max-height: 500px;
+    }
+    .footer-pharagraf {
+        margin-right: 117px;
+    }
+}
+
+@media (max-width: 980px) {
+    .head-logo {
+        margin-bottom: 5px;
+        width: 150px;
+    }
+	.header-wrapper {
+		padding: 0 50px;
+	}
+    .nav-link {
+        margin-right: 10px;
+    }
+    .content-part{
+        padding: 32px 185px 0 50px;
+        font-size: 12px;
+    }
+    .search-block {
+        margin: 100px 50px 0 50px;
+    }
+    .main-heading {
+        line-height: 66px;
+        font-size: 50px;
+        font-weight: bold;
+    }
+    .preview-section {
+        height: 500px;
+    }
+    .steps-block {
+        padding-top: 45px;
+    }
+    .second-heading {
+        font-size: 34px;
+    }
+    .icon {
+        max-height: 80px;
+        max-width: 80px;
+    }
+    .icons-block {
+        column-gap: 25px;
+    }
+    .pictures-block {
+    }
+    .destin-foto{
+        max-width: 400px;
+        max-height: 400px;
+    }
+    .footer-icons-block {
+        display: flex;
+        column-gap: 20px;
+        margin-right: 40px;
+    }
+    .footer-pharagraf {
+        margin-right: 165px;
+    }
+}
+@media (max-width: 800px) {
+    .head-logo{
+        display: none;
+    }
+    .mobile-logo{
+        display: block;
+    }
+    .stories-block{
+        flex-direction: column;
+    }
+    .stories-img{
+        max-width: 100%;
+        height: auto;
+    }
+    .stories-text-block {
+        padding-left: 19px;
+        margin: 20px 0 0 0;
+    }
+    .stories-block {
+        padding-bottom: 65px;
+    }
+    .header-wrapper {
+        padding: 0px 20px;
+    }
+    .content-part {
+        padding: 32px 185px 0 20px;
+    }
+    .search-block {
+        margin: 100px 50px 0 20px;
+    }
+    .footer-pharagraf {
+        margin-right: 77px;
+    }   
+}
+@media (max-width: 720px) {
+    header {
+        background-image: url(./assets/image/garrett-mobile.png);
+        background-repeat: no-repeat;
+        background-position: center 0px;
+        color: #fff;
+    }
+    .btn-green.second{
+        display: block;
+    }
+    .content-part {
+        padding: 0px 10px 0 20px;
+    }
+    .main-heading {
+        font-size: 40px;
+    }
+    .search-block {
+        margin: 58px 20px 0 20px;
+    }
+    .preview-section {
+        background-image: url(./assets/image/garrett-mobile.png);
+        background-repeat: no-repeat;
+        background-position: center -90px;
+    }
+    .btn-green{
+        display: none;
+    }
+    .nav-link{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 70%;
+        height: 100%;
+        background: #F2785C;
+        overflow: auto;
+        transition: all 0.3s ease 0s;
+    }
+    .nav-link._active{
+        left: 0; 
+    }
+    .header-wrapper{
+        position: relative;
+        background: rgb(2,0,36);
+        background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(27,93,153,0.9948354341736695) 0%, rgba(52,86,138,0.09567577030812324) 100%, rgba(216,226,228,1) 100%);
+    }    
+    .header-links{
+        width: 200px;
+        margin: 70px 15px 0px  0px;
+        flex-direction: column;
+        align-items: end;
+        justify-content: start;
+    }
+    .link{
+        display: block;
+        margin: 0 30px 30px 0;
+    }
+    .preview-section {
+        box-shadow: none;
+    }
+    .icons-pharagraf {
+        font-size: 15px;
+    }
+    .second-element {
+        margin: 0px;
+    }
+    .destin-foto {
+        max-width: 370px;
+        max-height: 370px;
+    }
+    footer {
+        justify-content: center;
+    }
+    .footer-pharagraf {
+        display: none;
+    }
+    .footer-icons-block {
+        display: flex;
+        column-gap: 20px;
+        margin: 0;
+    }
+    /* ============= БУРГЕР МЕНЮ ============= */
+    .burger-icon {
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .burger-icon span,
+    .burger-icon::before,
+    .burger-icon::after {
+
+        position: absolute;
+        height: 3px;
+        width: 30px;
+        transition: all 0.3s ease 0s;
+        background-color: #fff;
+    }
+    .burger-icon::before,
+    .burger-icon::after {
+        content: "";
+    }
+    .burger-icon::before {
+        top: 51px;
+    }
+    
+    .burger-icon::after {
+        bottom: 51px;
+    }
+    .burger-icon span {
+        top: 50%;
+        transform: scale(1) translate(0px, -50%);
+    }
+    .burger-icon._active span {
+        transform: scale(0) translate(0px, -50%);
+    }
+    .burger-icon._active::before {
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -60%);
+    }
+    .burger-icon._active::after {
+        bottom: 50%;
+        transform: rotate(45deg) translate(0px, 60%);
+    }
+    /* ============= МЕДИА 390 ============== */
+    @media (max-width: 390px) {
+        .nav-link {
+            width: 100%;
+        }
+        .main-heading {
+            display: none;
+        }
+        .first-paragraph {
+            display: none;
+        }
+        .search-block {
+            margin: 0px 15px 0 15px;
+            height: 48px;
+            /* margin-top: 80px; */
+        }
+        .head-textarea {
+            font-size: 14px;
+        }
+        .btn-green.second {
+            font-size: 11px;
+            min-height: 30px;
+        }
+        .content-part {
+            padding: 0;
+        }
+    }
+}
