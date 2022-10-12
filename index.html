@@ -10,6 +10,7 @@
     <title>Travel</title>
 </head>
 <body>
+    <div class="body__shadow" id="shadow"></div>
     <div class="wrapper">
         <header>
             <div class="header-wrapper">
@@ -21,6 +22,9 @@
                         <li><a class="link" href="#trip">Plan Your Trip</a></li>
                         <li><a class="link" href="#destination">Destinations</a></li>
                         <li><a class="link" href="#travel">Travel Stories</a></li>
+                        <li class="item-account"><a class="link" href="#">Account</a></li>
+                        <li class="social"><a class="link" href="#travel">Social Media</a></li>
+
                     </ul>
                 </nav>
                 <button class="btn-green">Login</button>
@@ -28,7 +32,41 @@
                     <span></span>
                 </div>
             </div>
+            <!-- ================= pop up ================= -->
+            
+            <div class="pop-up-body">
+                <h3 class="pop-up-heading">Log in to your account</h3>
+                <button class="facebook-btn">
+                    <img class="facebook-img" src="./assets/icons/facebook.svg" alt="facebook-btn">
+                    <span class="face-sent">Sign In with Facebook</span> 
+                </button>
+                <button class="google-btn">
+                    <img class="google-img" src="./assets/icons/googleLogo.svg" alt="google-btn">
+                    <span class="google-sent">Sign In with Google</span> 
+                </button>
+                <div class="or-container">
+                    <p class="or">or</p>
+                </div>
+                <form action="">
+                    <label for="e-mail" class="label-pop">E-mail</label>
+                    <input type="email" name="login_email" class="input-pop" id="login">
+                    <label for="psw" class="label-pop">Password</label>
+                    <input type="password" name="login_password" class="input-pop" id="password">
+                    <button class="sign-btn">
+                        <p class="buttton-sign-text">Sing In</p>
+                    </button>
+                </form>
+                <a href="#" class="fogot-password">Forgot Your Password?</a>
+                <div class="line"></div>
+                <div class="not-account">
+                    <span class="registr-question"> Don’t have an account?</span> <a href="#" class="registr-url">Register</a>
+                </div>
+            </div>
+                
         </header>
+        <!-- ============== end popup ============== -->
+        
+        <!-- =========== main ============== -->
         <main>
             <section class="preview-section">
                 <div class="content-part">
@@ -43,8 +81,8 @@
             <section class="section-steps">
                 <div class="steps-block" id="trip">
                     <h2 class="second-heading">3 STEPS TO THE PERFECT TRIP</h2>
-                    <div class="icons-block">
-                        <div class="icon-block">
+                    <div class="icons-blocks">
+                        <div class="icon-block first-element">
                             <svg class="icon">
                                 <use xlink:href="sprite.svg#frame"></use>
                             </svg>
@@ -56,7 +94,7 @@
                             </svg>
                             <p class="icons-pharagraf">Share us preferable dates </p>
                         </div>
-                        <div class="icon-block">
+                        <div class="icon-block third-element">
                             <svg class="icon">
                                 <use xlink:href="sprite.svg#frame3"></use>
                             </svg>
@@ -68,30 +106,60 @@
             <section class="destination">
                 <h2 class="second-heading" id="destination">POPULAR DESTINATIONS</h2>
                 <div class="pictures-block">
-                    <div class="picture-block">
-                        <img src="./assets/image/pic1.jpg" alt="pic1" class="destin-foto">
-                        <div class="picture-text">SPAIN</div>
-                    </div>
-                    <div class="picture-block">
-                        <img src="./assets/image/pic3.jpg" alt="pic2" class="destin-foto">
-                        <div class="picture-text">JAPAN</div>
-                    </div>
-                    <div class="picture-block">
-                        <img src="./assets/image/pic2.jpg" alt="pic3" class="destin-foto">
-                        <div class="picture-text">USA</div>
+                    <div class="pic-block-slader">
+                        <div id="item-0" class="picture-block">
+                            <picture class="picture">
+                                <source srcset="./assets/image/mob-image1.jpg" media="(max-width: 390px)">
+                                <source srcset="./assets/image/pic1.jpg">
+                                <img class="destin-foto first-foto" srcset="./assets/image/pic1.jpg" alt="My default image">
+                            </picture>
+                            <div class="picture-text">SPAIN</div>
+                        </div>
+                        <div id="item-1" class="picture-block">
+                            <picture class="picture">
+                                <source srcset="./assets/image/mob-image2.jpg" media="(max-width: 390px)">
+                                <source srcset="./assets/image/pic3.jpg">
+                                <img class="destin-foto second-foto" srcset="./assets/image/pic3.jpg" alt="My default image">
+                            </picture>
+                            <div class="picture-text">JAPAN</div>
+                        </div>
+                        <div id="item-2" class="picture-block">
+                            <picture class="picture">
+                                <source srcset="./assets/image/mob-image3.jpg" media="(max-width: 390px)">
+                                <source srcset="./assets/image/pic2.jpg">
+                                <img class="destin-foto third-foto" srcset="./assets/image/pic2.jpg" alt="My default image">
+                            </picture>
+                            <div class="picture-text">USA</div>
+                        </div>
+                        <div id="item-3" class="picture-block">
+                            <picture class="picture">
+                                <source srcset="./assets/image/mob-image1.jpg" media="(max-width: 390px)">
+                                <source srcset="./assets/image/pic1.jpg">
+                                <img class="destin-foto first-foto" srcset="./assets/image/pic1.jpg" alt="My default image">
+                            </picture>
+                            <div class="picture-text">SPAIN</div>
+                        </div>
+                        <div id="item-4" class="picture-block">
+                            <picture class="picture">
+                                <source srcset="./assets/image/mob-image2.jpg" media="(max-width: 390px)">
+                                <source srcset="./assets/image/pic3.jpg">
+                                <img class="destin-foto second-foto" srcset="./assets/image/pic3.jpg" alt="My default image">
+                            </picture>
+                            <div class="picture-text">JAPAN</div>
+                        </div>
                     </div>
                 </div>
-                <div class="circle-block">
-                    <svg class="circle">
-                        <use xlink:href="sprite.svg#circle1"></use>
-                    </svg>
-                    <svg class="circle">
-                        <use xlink:href="sprite.svg#circle2"></use>
-                    </svg>
-                    <svg class="circle">
-                        <use xlink:href="sprite.svg#circle1"></use>
-                    </svg>
-                </div>
+                <svg class="left-arrow">
+                    <use xlink:href="sprite.svg#left-arrow2"></use>
+                </svg>
+                <svg class="right-arrow">
+                    <use xlink:href="sprite.svg#right-arrow"></use>
+                </svg>
+                <ul class="circle-block">
+                    <li class="circle-blk"></li>
+                    <li class="circle-blk slider-item-active"></li>
+                    <li class="circle-blk"></li>
+                </ul>
                 <button class="btn-green"><span class="btn-span"></span>Find More</button>
             </section>
             <section class="travel">
@@ -99,31 +167,54 @@
                 <div class="stories">
                     <div class="stories-wrap">
                         <div class="stories-block">
-                            <img src="./assets/image/pic4.jpg" alt="stories" class="stories-img">
+                            <!-- ====== -->
+                            <picture >
+                                <source srcset="./assets/image/mob-pic1.jpg" media="(max-width: 390px)">
+                                <source srcset="./assets/image/pic4.jpg">
+                                <img class="stories-img" srcset="./assets/image/pic4.jpg" alt="My default image">
+                            </picture>
+                            <!-- ======= -->
+
                             <div class="stories-text-block">
                                 <h3 class="stories-heading">10 Photos of Attractive Thailand</h3>
-                                <p class="stories-pharagraf">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <span class="read">Read More</span></p>
+                                <p class="stories-pharagraf">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                                <p class="read">Read More</p>
                             </div>
                         </div>
                         <div class="stories-block">
-                            <img src="./assets/image/pic5.jpg" alt="stories" class="stories-img">
+                            <picture >
+                                <source srcset="./assets/image/mob-pic2.jpg" media="(max-width: 390px)">
+                                <source srcset="./assets/image/pic5.jpg">
+                                <img class="stories-img" srcset="./assets/image/pic5.jpg" alt="My default image">
+                            </picture>
                             <div class="stories-text-block">
                                 <h3 class="stories-heading">Canyonlands National Park, Utah</h3>
-                                <p class="stories-pharagraf">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <span class="read">Read More</span></p>
+                                <p class="stories-pharagraf">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                                <p class="read">Read More</p>
                             </div>
                         </div>
                         <div class="stories-block">
-                            <img src="./assets/image/pic6.jpg" alt="stories" class="stories-img">
+                            <picture >
+                                <source srcset="./assets/image/mob-pic4.jpg" media="(max-width: 390px)">
+                                <source srcset="./assets/image/pic6.jpg">
+                                <img class="stories-img" srcset="./assets/image/pic6.jpg" alt="My default image">
+                            </picture>
                             <div class="stories-text-block">
                                 <h3 class="stories-heading">I left my heart in the Mountains!</h3>
-                                <p class="stories-pharagraf">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <span class="read">Read More</span></p>
+                                <p class="stories-pharagraf">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                                <p class="read">Read More</p>
                             </div>
                         </div>
                         <div class="stories-block">
-                            <img src="./assets/image/pic7.jpg" alt="stories" class="stories-img">
+                            <picture >
+                                <source srcset="./assets/image/mob-pic3.jpg" media="(max-width: 390px)">
+                                <source srcset="./assets/image/pic7.jpg">
+                                <img class="stories-img" srcset="./assets/image/piс7.jpg" alt="My default image">
+                            </picture>
                             <div class="stories-text-block">
                                 <h3 class="stories-heading">The Longest journey in my life!</h3>
-                                <p class="stories-pharagraf">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <span class="read">Read More</span></p>
+                                <p class="stories-pharagraf">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla paratur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                                <p class="read">Read More</p> 
                             </div>
                         </div>
                         <button class="btn-green"><span class="btn-span"></span>See More</button>
